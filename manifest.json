@@ -1,0 +1,32 @@
+{
+  "manifest_version": "1.0",
+  "org": "jd",
+  "repo": "tenacity",
+  "versions": [
+    {
+      "commit": "2cd062edcb522b37c49e5b693e69d5fa8d6d2437",
+      "parsed_at": "2026-04-11T08:57:42.998982+00:00",
+      "tag": "v1.3.2",
+      "filetree": "filetree/2cd062edcb522b37c49e5b693e69d5fa8d6d2437.nq.gz",
+      "blobs": [
+        "blob/ffe2fce498955b628014618b28c6bcf152466a4a.nq.gz",
+        "blob/bfef02d86588afa19ceb1d51156b4ef7a2e1b3ab.nq.gz",
+        "blob/60f7c4ceccc064685e078891a81f3f23eff24056.nq.gz",
+        "blob/7a4a3ea2424c09fbe48d455aed1eaa94d9124835.nq.gz",
+        "blob/18434bc3a3f9c06b44b010c3d2e51caf97a1fb0d.nq.gz",
+        "blob/39b79f6d232e9059f6937e4146b30d2946385f90.nq.gz",
+        "blob/fca311caa7dba7ddfae791331b605c7782579791.nq.gz",
+        "blob/ec62bd62e7e64402f0853e30f8ad577ce3ec1031.nq.gz",
+        "blob/dddc8e12580488167691ec9f5dac87f8b58646c8.nq.gz",
+        "blob/1adb67e9b7c7e411b4a2f16739069eaf08bf7aa4.nq.gz",
+        "blob/56029664ae5f0ffaaa3bae3411645725a8850f3a.nq.gz",
+        "blob/3ed312da22fc717c87714ee69665491d936ba744.nq.gz"
+      ]
+    }
+  ],
+  "commit": "commit/commit.nq.gz",
+  "branch": "branch/branch.nq.gz",
+  "tag": "tag/tag.nq.gz",
+  "issue": "issue/issue.nq.gz",
+  "pr": "pr/pr.nq.gz"
+}
