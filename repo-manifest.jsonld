@@ -435,8 +435,9 @@
     {
       "@id": "https://repolex.ai/r/jd/tenacity/commit/36a09fa4dadb67b81359078c61f418a971f57372",
       "git:hexsha": "36a09fa4dadb67b81359078c61f418a971f57372",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v1.3.0"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v1.3.0",
+      "repolex:parsedAt": "2026-09-18T09:29:53.366407+00:00"
     },
     {
       "@id": "https://repolex.ai/r/jd/tenacity/commit/cab083eb5791615fadbc0c98ad77a70d64b77d0d",
