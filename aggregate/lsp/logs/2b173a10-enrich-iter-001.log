@@ -1,0 +1,15 @@
+[2026-09-19T05:48:59Z] === ENRICH ITERATION 1 START | repo=jd/tenacity sha=2b173a10 ===
+[2026-09-19T05:48:59Z] [iter=1] PHASE START: enrich repo=jd/tenacity sha=2b173a10 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2b173a10-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2b173a1039009773dbf5d377f95cc8aabe83bf58.nq.gz
+[2026-09-19T05:48:59Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-19T05:49:01Z] [iter=1] AST store loaded triples=173105 load_secs=2 mem_mb=317 MB
+[2026-09-19T05:49:01Z] [iter=1] Step 2: Finding LSP targets mem_mb=317 MB
+[2026-09-19T05:49:01Z] [iter=1] LSP targets found call_sites=1675 imports=0 extends=0 implements=0 secs=0
+[2026-09-19T05:49:02Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=317 MB
+[2026-09-19T05:49:02Z] [iter=1] Position index built positions=11392 nodes_with_types=14642 secs=1 mem_mb=317 MB
+[2026-09-19T05:49:02Z] [iter=1] Step 3: Starting LSP resolution mem_mb=317 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T05:49:02Z] [iter=1] Resolving target type target_type=call_site count=1675
+[2026-09-19T05:50:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=4 resolved=503 errors=861 current=tests/test_issue_478.py
+[2026-09-19T05:50:18Z] [iter=1] Target type resolved target_type=call_site resolved=631 errors=988 secs=76 mem_mb=317 MB
+[2026-09-19T05:50:20Z] [iter=1] Step 5: Writing final enrichment file triples=15093
+[2026-09-19T05:50:21Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/2b173a1039009773dbf5d377f95cc8aabe83bf58.nq.gz size_kb=252
+[2026-09-19T05:50:21Z] [iter=1] PHASE END: enrich elapsed_s=82 elapsed_min=1.4 total_triples=15093
