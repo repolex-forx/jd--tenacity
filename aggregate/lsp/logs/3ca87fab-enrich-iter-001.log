@@ -1,0 +1,18 @@
+[2026-09-21T05:39:11Z] === ENRICH ITERATION 1 START | repo=jd/tenacity sha=3ca87fab ===
+[2026-09-21T05:39:11Z] [iter=1] PHASE START: enrich repo=jd/tenacity sha=3ca87fab runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3ca87fab-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3ca87fab537246ed3e5085c74ae9a4f7cf851e3c.nq.gz
+[2026-09-21T05:39:14Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=80 MB
+[2026-09-21T05:39:15Z] [iter=1] AST store loaded triples=38127 load_secs=1 mem_mb=141 MB
+[2026-09-21T05:39:15Z] [iter=1] Step 2: Finding LSP targets mem_mb=141 MB
+[2026-09-21T05:39:15Z] [iter=1] LSP targets found call_sites=391 imports=13 extends=8 implements=0 secs=0
+[2026-09-21T05:39:15Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=141 MB
+[2026-09-21T05:39:15Z] [iter=1] Position index built positions=2564 nodes_with_types=3240 secs=0 mem_mb=141 MB
+[2026-09-21T05:39:15Z] [iter=1] Step 3: Starting LSP resolution mem_mb=141 MB already_completed_types=[] already_completed_files=0
+[2026-09-21T05:39:15Z] [iter=1] Resolving target type target_type=call_site count=391
+[2026-09-21T05:39:22Z] [iter=1] Target type resolved target_type=call_site resolved=160 errors=201 secs=6 mem_mb=141 MB
+[2026-09-21T05:39:22Z] [iter=1] Resolving target type target_type=import_statement count=13
+[2026-09-21T05:39:23Z] [iter=1] Target type resolved target_type=import_statement resolved=10 errors=0 secs=1 mem_mb=141 MB
+[2026-09-21T05:39:23Z] [iter=1] Resolving target type target_type=extends_clause count=8
+[2026-09-21T05:39:24Z] [iter=1] Target type resolved target_type=extends_clause resolved=8 errors=0 secs=1 mem_mb=141 MB
+[2026-09-21T05:39:25Z] [iter=1] Step 5: Writing final enrichment file triples=3913
+[2026-09-21T05:39:25Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/3ca87fab537246ed3e5085c74ae9a4f7cf851e3c.nq.gz size_kb=60
+[2026-09-21T05:39:25Z] [iter=1] PHASE END: enrich elapsed_s=13 elapsed_min=0.2 total_triples=3913
