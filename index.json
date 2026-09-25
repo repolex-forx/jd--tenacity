@@ -3,6 +3,11 @@
   "repo": "tenacity",
   "versions": [
     {
+      "commit": "5a66d389ac3c90c80c8bc9ad7694b810c392d39b",
+      "tag": "3.0.0",
+      "parsed_at": "2026-09-25T19:06:59.798302+00:00"
+    },
+    {
       "commit": "bed881719af36d5db13ba58963cf908c80ed303f",
       "tag": "3.1.0",
       "parsed_at": "2026-09-24T12:40:09.136385+00:00"

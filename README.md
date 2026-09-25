@@ -6,29 +6,27 @@ RDF knowledge graph data for [jd/tenacity](https://github.com/jd/tenacity), pars
 
 ## How to use this data
 
-The easiest way to get started is to install the [lexq](https://github.com/repolex-ai/lexq) query tool using [uv](https://docs.astral.sh/uv/getting-started/installation/).
-
-If you have uv installed, just copy/paste this into your terminal:
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
 
 ```bash
-uv tool install git+https://github.com/repolex-ai/lexq
+cargo install --git https://github.com/repolex-ai/rlex
 ```
 
-This installs lexq onto your system, in your user context. Verify the install:
+Verify the install:
 
 ```bash
-lexq --help
+rlex --help
 ```
 
-**lexq is designed to be used primarily by LLMs in a terminal.** Start up your favorite LLM and ask it to use the lexq tool. It's that easy!
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
 
 To load this repo's data:
 
 ```bash
-lexq download jd/tenacity
+rlex download jd/tenacity
 ```
 
-This will automatically download essential data files from the last parsed commit. Consult `lexq --moreinfo` for other options, including downloading multiple commits, blobs, etc.
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
 
 ## Data structure
 
@@ -97,6 +95,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     │   ├── 545a337cc9a02098ee779c5776cf0c360287d955
     │   │   └── chunk-001.nq.gz
     │   ├── 548c5d490187af6f339cbffdd0add38aecc3ecb0
+    │   │   └── chunk-001.nq.gz
+    │   ├── 5a66d389ac3c90c80c8bc9ad7694b810c392d39b
     │   │   └── chunk-001.nq.gz
     │   ├── 5ac66cf291fa6d017d28a56355cc50f476cc08db
     │   │   └── chunk-001.nq.gz
@@ -211,6 +211,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     │   ├── 52ebba0af2d1782e74524a90b0309a4b95b3581e.nq.gz
     │   ├── 545a337cc9a02098ee779c5776cf0c360287d955.nq.gz
     │   ├── 548c5d490187af6f339cbffdd0add38aecc3ecb0.nq.gz
+    │   ├── 5a66d389ac3c90c80c8bc9ad7694b810c392d39b.nq.gz
     │   ├── 5ac66cf291fa6d017d28a56355cc50f476cc08db.nq.gz
     │   ├── 5f3d822c22ef435a57081a314bcb61b1c9f7b326.nq.gz
     │   ├── 62787c34bb052d28d814bc07e5c3caed22cd73a2.nq.gz
@@ -313,6 +314,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
         │   └── chunk-001.nq.gz
         ├── 548c5d490187af6f339cbffdd0add38aecc3ecb0
         │   └── chunk-001.nq.gz
+        ├── 5a66d389ac3c90c80c8bc9ad7694b810c392d39b
+        │   └── chunk-001.nq.gz
         ├── 5ac66cf291fa6d017d28a56355cc50f476cc08db
         │   └── chunk-001.nq.gz
         ├── 5f3d822c22ef435a57081a314bcb61b1c9f7b326
@@ -361,16 +364,10 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
         │   └── chunk-001.nq.gz
         ├── b1c98ef7582565b3472bd4fb1bc0cc7907a30121
         │   └── chunk-001.nq.gz
-        ├── b49eb370573626abd5ddb5dc03228c503079be59
-        │   └── chunk-001.nq.gz
-        ├── bd52c579e5ac384b016d532f431487fa89ef1eb8
-        │   └── chunk-001.nq.gz
-        ├── bed881719af36d5db13ba58963cf908c80ed303f
-        │   └── chunk-001.nq.gz
-        └── c3b02ab8aa532f0b1c8d1bda94856114dc45c223
+        └── b49eb370573626abd5ddb5dc03228c503079be59
             └── chunk-001.nq.gz
 
-134 directories, 200 files
+133 directories, 200 files
 ```
 
 | Directory | What it contains |
@@ -384,10 +381,11 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 | `branch/` | Branch metadata. |
 | `tag/` | Tag metadata. |
 | `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
 
 ## Source repository
 
 [jd/tenacity](https://github.com/jd/tenacity)
 
 ---
-*Parsed on 2026-09-24 by [repolex](https://repolex.ai)*
+*Parsed on 2026-09-25 by [repolex](https://repolex.ai)*
