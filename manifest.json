@@ -22628,6 +22628,52 @@
       ],
       "ast": [
         "aggregate/ast/5a66d389ac3c90c80c8bc9ad7694b810c392d39b/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/5a66d389ac3c90c80c8bc9ad7694b810c392d39b.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "six",
+          "ecosystem": "PYPI",
+          "version": "1.7.0",
+          "githubOrg": "benjaminp",
+          "githubRepo": "six",
+          "githubCommit": "1910297e89d7490f9cd137b17d4578be3c6094a0",
+          "githubTag": "1.7.0",
+          "githubUrl": "https://github.com/benjaminp/six",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "futures",
+          "ecosystem": "PYPI",
+          "version": "3.0",
+          "githubOrg": "agronholm",
+          "githubRepo": "pythonfutures",
+          "githubUrl": "https://github.com/agronholm/pythonfutures",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "monotonic",
+          "ecosystem": "PYPI",
+          "version": "0.6",
+          "githubOrg": "atdt",
+          "githubRepo": "monotonic",
+          "githubCommit": "945f25554575287808cfb0682096ef7e3d8bdc38",
+          "githubTag": "0.6",
+          "githubUrl": "https://github.com/atdt/monotonic",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "setuptools",
+          "ecosystem": "PYPI",
+          "version": "84.0.0",
+          "githubOrg": "pypa",
+          "githubRepo": "setuptools",
+          "githubCommit": "72e919a8b10aaafc041205d4e3ae0e6a2e1e5f87",
+          "githubTag": "v84.0.0",
+          "githubUrl": "https://github.com/pypa/setuptools",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.14/site-packages/setuptools/__init__.py"
+        }
       ]
     }
   ],
